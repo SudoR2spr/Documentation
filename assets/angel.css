@@ -1,0 +1,196 @@
+body {
+	background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	}
+/* সেন্টারিং কন্টেন্ট */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	min-height: 60vh;	
+}
+
+/* ফর্ম বক্সের স্টাইল */
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;  /* ফর্ম বক্সের উপরের গ্যাপ */
+	box-shadow: 3px 6px hsl(0, 0%, 20%);
+    border-top-color: black;
+    border-radius: 45px 3px; 
+    border: 3px solid DeepSkyBlue;
+}
+
+/* টাইটেল স্টাইল */
+.title {
+    font-size: 28px;
+    margin-bottom: 10px;  /* টাইটেলের নিচে গ্যাপ */
+    text-align: center;
+	font-weight: bold;   /* বোল্ড ফন্ট */
+	color: yellow;
+	text-shadow: 3px 1px Black;
+}
+
+.woodcraft {
+    font-size: 14px;
+    margin-bottom: 30px;  /* টাইটেলের নিচে গ্যাপ */
+    text-align: center;
+}
+/* ফর্ম লেবেল স্টাইল */
+.form-label {
+    font-size: 16px;          /* ফন্ট সাইজ */
+    font-weight: bold;        /* বোল্ড ফন্ট */
+    margin-bottom: 8px;       /* ইনপুট ফিল্ডের আগে গ্যাপ */
+    color: #333;              /* কালো রঙ */
+}
+
+/* ইনপুট ফিল্ডের স্টাইল */
+.form-control {
+    width: 100%;
+    margin: 20;
+    padding: 10px 0px;           /* ইনপুট ফিল্ডের প্যাডিং */
+    border-radius: 5px;       /* কোণার রেডিয়াস */
+    border: 2px solid #ccc;   /* সীমানা */
+    margin-bottom: 20px;      /* পরবর্তী উপাদানের জন্য গ্যাপ */
+    font-size: 14px;          /* ফন্ট সাইজ */
+    color: #333; 	/* টেক্সট রঙ */
+}
+
+/* ইনপুট ফিল্ডের উপর হোভার ইফেক্ট */
+.form-control:hover {
+    border-color: #007bff;    /* হোভার করলে সীমানা ব্লু হবে */
+}
+
+/* বাটনের স্টাইল */
+.btn {
+    padding: 12px 20px;       /* বাটনের প্যাডিং */
+    border: none;             /* সীমানা সরানো */
+    border-radius: 5px;       /* কোণার রেডিয়াস */
+    font-size: 16px;          /* ফন্ট সাইজ */
+    font-weight: bold;        /* বোল্ড ফন্ট */
+    color: #fff;              /* বাটনের টেক্সট রঙ */
+    background-color: #007bff; /* বাটনের ব্যাকগ্রাউন্ড রঙ */
+    cursor: pointer;          /* কিউসর পয়েন্টার */
+    width: 100%;               /* বাটন পুরো প্রস্থ নিবে */
+	box-shadow: 0 5px #666;	
+}
+
+/* বাটনের উপর হোভার ইফেক্ট */
+.btn:hover {
+    background-color: #0056b3; /* হোভার করলে ব্যাকগ্রাউন্ড গা dark  হবে */
+}
+
+/* বাটনের উপর অ্যাকটিভ (ক্লিক করা হলে) ইফেক্ট */
+.btn:active {
+    background-color: #004085; /* ক্লিক করার সময় ব্যাকগ্রাউন্ড আরও গা dark  হবে */
+}
+
+
+/* প্রোগ্রেস বার */
+.progress {
+    height: 5px;
+    margin-top: 20px;  /* প্রোগ্রেস বার উপরের গ্যাপ */
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/* ডাউনলোড লিঙ্কের স্টাইল */
+#download-link {
+    text-align: center;
+    margin-top: 20px;  /* ডাউনলোড লিঙ্কের উপরের গ্যাপ */
+}		
+
+.navbar {
+	width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+	}
+	
+	.navbar a {
+		float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+		}
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            gap: 3px;
+        }
+        .box .inner {
+            position: relative;
+            width: 300px;
+            height: 80px;
+            line-height: 100px;
+            font-size: 2em;
+            font-family: sans-serif;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            box-shadow: 3px 6px black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box .inner:first-child {
+            background-color: DeepSkyBlue;
+            color: LightCyan;
+            transform-origin: right;
+            transform: perspective(100px) rotateY(-15deg);
+        }
+        .box .inner:last-child {
+            background-color: LightSkyBlue;
+            color: Navy;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(15deg);
+        }
+        .box .inner span {
+            position: absolute;
+            animation: marquee 5s linear infinite;
+        }
+        .box .inner:first-child span {
+            animation-delay: 2.5s;
+            left: -100%;
+        }
+        @keyframes marquee {
+            from {
+                left: 100%;
+            }
+            to {
+                left: -100%;
+            }
+        }
+        .footer {
+            text-align: center;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            color: white;
+            background-color: hsl(0, 0%, 20%);
+            font-size: 12px;
+            border-radius: 5px 5px 0 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
